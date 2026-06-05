@@ -1,0 +1,127 @@
+/* Colors */
+/* Typography */
+@font-face {
+  font-family: "Fraunces";
+  src: url(./assets/fonts/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
+  font-weight: 500, 700;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fraunces", serif;
+  color: hsl(0, 0%, 0%);
+}
+
+h1, h2, h3, h4, h5, h5, p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-inline-size: 1440px;
+  min-inline-size: 375px;
+  inline-size: 100vw;
+  block-size: 100vh;
+  padding: 0;
+  font-size: 0.875rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+}
+
+.c-card {
+  display: grid;
+  overflow: hidden;
+  margin: 80px auto;
+  border-radius: 8px;
+  max-inline-size: 350px;
+  inline-size: 100%;
+  background-color: hsl(0, 0%, 100%);
+}
+@media (min-width: 768px) {
+  .c-card {
+    margin: 120px auto;
+    grid-template-columns: 1fr 1fr;
+    max-inline-size: 600px;
+  }
+}
+
+.c-card__picture img {
+  display: block;
+  border-radius: 8px 8px 0 0;
+  inline-size: 100%;
+  aspect-ratio: 1.1/1;
+  object-fit: cover;
+  object-position: center 25%;
+}
+@media (min-width: 768px) {
+  .c-card__picture img {
+    border-radius: 8px 0 0 8px;
+    block-size: 100%;
+    aspect-ratio: auto;
+    object-position: 45% 40%;
+  }
+}
+
+.c-card__content {
+  display: grid;
+  gap: 18px;
+  padding: 32px;
+}
+
+.c-card__company {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.c-card__title {
+  font-size: 2rem;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .c-card__title {
+    font-size: 2.25rem;
+  }
+}
+
+.c-card__price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+[data-price-current] {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  color: hsl(158, 36%, 37%);
+}
+
+[data-price-old] {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+.c-card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 18px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+}
+.c-card__button:hover, .c-card__button:focus {
+  background-color: hsl(158, 42%, 18%);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

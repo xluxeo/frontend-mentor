@@ -1,0 +1,9 @@
+:root {
+    --font-family: 'Figtree', sans-serif;
+    --font-size-text: 1rem;
+    --font-size-s: 0.9rem;
+    --font-size-xs: 0.8rem;
+    --font-size-medium: 1.1rem;
+    --font-weight-regular: 500;
+    --font-weight-bold: 800;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "twig-vite",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "icons": "fantasticon ./src/assets/icons"
+  },
+  "devDependencies": {
+    "@vituum/vite-plugin-twig": "^1.1.0",
+    "remix": "^2.17.4",
+    "sass": "^1.63.4",
+    "sass-mq": "^6.0.0",
+    "vituum": "^1.1.1"
+  },
+  "dependencies": {
+    "fantasticon": "^1.2.3"
+  }
+}
